@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  ul
+    each message in messages
+      li= message.user + ' : ' + message.text
+
+  button(onclick="location.href='/new'", class="btn btn-primary") Add New Message
+
